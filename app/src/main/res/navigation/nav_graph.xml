@@ -5,7 +5,7 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/blankFragment">
 
-    <fragment
+    <dialog
         android:id="@+id/bottomSheetFragmentOne"
         android:name="com.example.demobottomsheetnav.BottomSheetFragmentOne"
         android:label="fragment_bottom_sheet_one"
@@ -13,7 +13,7 @@
         <action
             android:id="@+id/action_bottomSheetFragmentOne_to_bottomSheetFragmentTwo"
             app:destination="@id/bottomSheetFragmentTwo" />
-    </fragment>
+    </dialog>
     <fragment
         android:id="@+id/blankFragment"
         android:name="com.example.demobottomsheetnav.BlankFragment"
@@ -23,7 +23,7 @@
             android:id="@+id/action_blankFragment_to_bottomSheetFragmentOne"
             app:destination="@id/bottomSheetFragmentOne" />
     </fragment>
-    <fragment
+    <dialog
         android:id="@+id/bottomSheetFragmentTwo"
         android:name="com.example.demobottomsheetnav.BottomSheetFragmentTwo"
         android:label="fragment_bottom_sheet_two"
