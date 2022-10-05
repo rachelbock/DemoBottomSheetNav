@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 // TODO: Rename parameter arguments, choose names that match
@@ -37,6 +39,14 @@ class BottomSheetFragmentOne : BottomSheetDialogFragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_bottom_sheet_one, container, false)
+
+        val button = view.findViewById<Button>(R.id.button2)
+
+        val navHostFragment = this.findNavController()
+
+        button.setOnClickListener {
+            navHostFragment.navigate(R.id.action_bottomSheetFragmentOne_to_bottomSheetFragmentTwo)
+        }
 
         return view
     }

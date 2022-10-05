@@ -39,8 +39,7 @@ class BlankFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_blank, container, false)
 
-        val navHostFragment =
-            this.findNavController()
+        val navHostFragment = this.findNavController()
 
         val button = view.findViewById<Button>(R.id.button)
 
