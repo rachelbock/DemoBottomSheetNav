@@ -11,7 +11,7 @@ class CustomBottomSheetBehavior @JvmOverloads constructor(
 ) : BottomSheetBehavior<View>(context, attrs) {
 
     init {
-        peekHeight = 0
+//        peekHeight = 0
         skipCollapsed = true
         isHideable = false
         isDraggable = false
