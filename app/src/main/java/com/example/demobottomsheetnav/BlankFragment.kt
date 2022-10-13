@@ -47,6 +47,10 @@ class BlankFragment : Fragment() {
             navHostFragment.navigate(R.id.action_blankFragment_to_bottomSheetFragmentOne)
         }
 
+        view.findViewById<Button>(R.id.bottom_sheet_button).setOnClickListener {
+            (activity as MainActivity).toggleBottomSheet()
+        }
+
         return view
     }
 

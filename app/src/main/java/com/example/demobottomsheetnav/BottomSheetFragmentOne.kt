@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 // TODO: Rename parameter arguments, choose names that match
@@ -45,6 +47,7 @@ class BottomSheetFragmentOne : BottomSheetDialogFragment() {
         val navHostFragment = this.findNavController()
 
         button.setOnClickListener {
+            this.dismiss()
             navHostFragment.navigate(R.id.action_bottomSheetFragmentOne_to_bottomSheetFragmentTwo)
         }
 
